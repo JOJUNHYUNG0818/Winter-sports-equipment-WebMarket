@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -82,4 +81,39 @@ html {
 
 h1 {
   font-size: 2em;
+}
+
+.search-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2; /* 검색 컨테이너가 비디오 위에 표시되도록 */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+}
+
+.search-container button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 0 3px 3px 0;
+  outline: none;
+}
+
+.search-container button:hover {
+  background: #555;
 }
